@@ -1,0 +1,12 @@
+use CS4342;
+CREATE TABLE `users` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `email`    VARCHAR(255) NOT NULL,
+  `role`     VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `users` (username,password,email,role) VALUES ('admin','admin1','lethompson@miners.utep.edu','coordinator'),('user','user1','lethompson1024@gmail.com','teacher'),('admin','admin1','admin@utep.edu','coordinator'),('lthompson4115','205cuPA!','lthompson@yahoo.com','teacher'),('thom1024','thom1024','reyes@gmail.com','teacher');

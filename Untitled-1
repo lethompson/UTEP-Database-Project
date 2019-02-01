@@ -1,0 +1,16 @@
+<?php
+
+//Start the session
+   session_start();
+
+               $value1 = $value2 = $total = "";
+
+                if (isset( $_POST["add"] )){
+                    
+                     $value1 = $_POST['investigated1'];
+                     $value2 = $_POST['shows2'];
+                    
+                     $total = $value1 + $value2;
+                }
+               
+?>
